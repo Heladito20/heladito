@@ -11,28 +11,26 @@
 
   <!-- Sección especial de la luna -->
   <div class="luna-section">
-    <img src="images/luna.png" alt="Luna y nosotros">
+    <img src="images/luna.png" alt="Luna y nosotros" class="clickable">
     <p id="frase-luna">✨ Eres mi universo ✨</p>
   </div>
 
   <!-- Galería de fotos -->
   <div class="gallery">
-    <img src="images/1.jpeg" alt="Recuerdo 1">
-    <img src="images/2.jpeg" alt="Recuerdo 2">
-    <img src="images/3.jpeg" alt="Recuerdo 3">
-    <img src="images/4.jpeg" alt="Recuerdo 4">
-    <img src="images/5.jpeg" alt="Recuerdo 5">
-    <img src="images/6.jpeg" alt="Recuerdo 6">
-    <img src="images/7.jpeg" alt="Recuerdo 7">
-    <img src="images/8.jpeg" alt="Recuerdo 8">
-    <img src="images/9.jpeg" alt="Recuerdo 9">
-    <img src="images/10.jpeg" alt="Recuerdo 10">
+    <img src="images/1.jpeg" alt="Recuerdo 1" class="clickable">
+    <img src="images/2.jpeg" alt="Recuerdo 2" class="clickable">
+    <img src="images/3.jpeg" alt="Recuerdo 3" class="clickable">
+    <img src="images/4.jpeg" alt="Recuerdo 4" class="clickable">
+    <img src="images/5.jpeg" alt="Recuerdo 5" class="clickable">
+    <img src="images/6.jpeg" alt="Recuerdo 6" class="clickable">
+    <img src="images/7.jpeg" alt="Recuerdo 7" class="clickable">
+    <img src="images/8.jpeg" alt="Recuerdo 8" class="clickable">
+    <img src="images/9.jpeg" alt="Recuerdo 9" class="clickable">
+    <img src="images/10.jpeg" alt="Recuerdo 10" class="clickable">
   </div>
 
   <!-- Contador de tiempo juntos -->
-  <div id="contador">
-    💖 Hemos estado juntos por 0 años, 5 meses y 0 días 💖
-  </div>
+  <div id="contador"></div>
 
   <!-- Playlist de Spotify -->
   <div class="spotify-section">
@@ -48,6 +46,15 @@
          class="spotify-button">🎶 Abrir en Spotify</a>
     </p>
   </div>
+
+  <!-- Modal para ver imágenes en grande -->
+  <div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="imagen-grande">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
-
