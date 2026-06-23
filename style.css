@@ -1,24 +1,30 @@
+/* Importar fuentes Montserrat y Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600&display=swap');
+
 /* Fondo general más suave */
 body {
   background: linear-gradient(to bottom, #1a1a2e, #16213e);
   color: #fff;
-  font-family: 'Segoe Script', cursive;
+  font-family: 'Montserrat', sans-serif; /* Texto general */
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* Título principal */
+/* Título principal con Lora */
 h1 {
   margin: 20px;
   color: #ff99cc;
-  text-shadow: 0 0 12px #ff66b2;
-  font-size: 34px;
+  text-shadow: 0 0 15px #ff66b2;
+  font-size: 52px; /* más grande */
+  font-family: 'Lora', serif; /* Fuente elegante para títulos */
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* Foto de la luna con estilo propio */
 .luna-img {
-  width: 300px; /* más grande */
+  width: 340px; /* más grande */
   border-radius: 50%;
   box-shadow: 0 0 40px #ff66b2;
   cursor: pointer;
@@ -30,10 +36,12 @@ h1 {
 }
 
 #frase-luna {
-  font-size: 22px;
+  font-size: 26px;
   color: #ffccff;
   text-shadow: 0 0 12px #ff66b2;
   margin: 10px 0;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Collage Polaroid disperso */
@@ -46,7 +54,7 @@ h1 {
 }
 
 .gallery img {
-  max-width: 220px; /* se acoplan al tamaño original */
+  max-width: 240px;
   height: auto;
   border-radius: 10px;
   background: #fff;
@@ -112,9 +120,11 @@ h1 {
 /* Contador */
 #contador {
   margin-top: 25px;
-  font-size: 22px;
+  font-size: 26px;
   color: #ffccff;
   text-shadow: 0 0 12px #ff66b2;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   animation: pulse 2s infinite;
 }
 
@@ -127,18 +137,21 @@ h1 {
 /* Playlist */
 .spotify-section h2 {
   margin-top: 30px;
-  font-size: 24px;
+  font-size: 30px; /* más grande */
   color: #ff99cc;
   text-shadow: 0 0 12px #ff66b2;
+  font-weight: 700;
+  font-family: 'Lora', serif;
 }
 
 .spotify-button {
   background:#ff66b2;
   color:white;
-  padding:10px 20px;
+  padding:12px 24px;
   border-radius:25px;
   text-decoration:none;
-  font-family:'Segoe Script', cursive;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 /* Animación corazones */
