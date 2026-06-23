@@ -30,12 +30,8 @@ function actualizarContador() {
 
   // Cambiar color del título según el mes
   const titulo = document.getElementById("titulo");
-  const colores = ["#2f3e46", "#1b263b", "#000000", "#3a2f2f", "#264653"];
+  const colores = ["#ffffff", "#f1f1f1", "#e0e0e0", "#cfcfcf", "#b0b0b0"];
   titulo.style.color = colores[meses % colores.length];
-
-  // También cambiar el fondo según el mes
-  const fondos = ["#2f3e46", "#1b263b", "#000000", "#3a2f2f", "#264653"];
-  document.body.style.background = fondos[meses % fondos.length];
 }
 
 // Actualizar al cargar
