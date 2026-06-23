@@ -32,6 +32,16 @@ function actualizarContador() {
   const titulo = document.getElementById("titulo");
   const colores = ["#ffffff", "#f1f1f1", "#e0e0e0", "#cfcfcf", "#b0b0b0"];
   titulo.style.color = colores[meses % colores.length];
+
+  // Cambiar fondo según el mes (dinámico)
+  const fondos = [
+    "linear-gradient(135deg, #2f3e46, #1b263b, #3a2f2f, #264653)",
+    "linear-gradient(135deg, #1b263b, #264653, #2f3e46, #3a2f2f)",
+    "linear-gradient(135deg, #3a2f2f, #2f3e46, #1b263b, #264653)",
+    "linear-gradient(135deg, #264653, #3a2f2f, #2f3e46, #1b263b)",
+    "linear-gradient(135deg, #000000, #2f3e46, #1b263b, #3a2f2f)"
+  ];
+  document.body.style.background = fondos[meses % fondos.length];
 }
 
 // Actualizar al cargar
