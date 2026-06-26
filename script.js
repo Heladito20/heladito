@@ -68,10 +68,13 @@ cerrar.onclick = function() {
   modal.style.display = "none";
 }
 
-// Spotify autoplay (forzar reproducción al cargar)
+// Spotify autoplay al cargar
 window.addEventListener("load", () => {
   const spotifyFrame = document.querySelector(".spotify-box iframe");
   if (spotifyFrame) {
-    spotifyFrame.src = spotifyFrame.src + "&autoplay=1";
+    if (!spotifyFrame.src.includes("autoplay=1")) {
+      spotifyFrame.src += "&autoplay=1";
+    }
   }
 });
+
