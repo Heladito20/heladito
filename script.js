@@ -1,4 +1,4 @@
-// Fecha de inicio de la relación
+// Fecha oficial de inicio de la relación
 const fechaInicio = new Date("2026-01-23"); 
 
 function actualizarContador() {
@@ -21,9 +21,9 @@ function actualizarContador() {
 
   let mensaje = "";
   if (años > 0) {
-    mensaje = `Hemos estado juntos por ${años} años, ${meses} meses y ${dias} días`;
+    mensaje = `Oficialmente nuestra relación lleva ${años} años, ${meses} meses y ${dias} días desde el 23 de enero de 2026`;
   } else {
-    mensaje = `Hemos estado juntos por ${meses} meses y ${dias} días`;
+    mensaje = `Oficialmente nuestra relación lleva ${meses} meses y ${dias} días desde el 23 de enero de 2026`;
   }
 
   document.getElementById("contador").innerHTML = mensaje;
