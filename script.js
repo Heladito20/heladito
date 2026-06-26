@@ -21,12 +21,29 @@ function actualizarContador() {
 
   let mensaje = "";
   if (años > 0) {
-    mensaje = `Oficialmente nuestra relación lleva ${años} años, ${meses} meses y ${dias} días desde el 23 de enero de 2026`;
+    mensaje = `Oficialmente nuestra relación lleva ${años} años, ${meses} meses y ${dias} días desde el 23 de enero de 2026.`;
   } else {
-    mensaje = `Oficialmente nuestra relación lleva ${meses} meses y ${dias} días desde el 23 de enero de 2026`;
+    mensaje = `Oficialmente nuestra relación lleva ${meses} meses y ${dias} días desde el 23 de enero de 2026.`;
   }
 
   document.getElementById("contador").innerHTML = mensaje;
+
+  // Mensaje final romántico que conecta con el inicial
+  const mensajeFinal = document.getElementById("mensaje-final");
+  if (mensajeFinal) {
+    mensajeFinal.innerHTML = `
+      Lo nuestro no inicia el 23 de enero, lo nuestro viene de algo más grande: 
+      de un destino que hizo que cada día antes de conocernos aprendiéramos nuestras lecciones por separado, 
+      que nos topáramos más de una vez en algún lugar, que permitió que las personas que debían unirnos se conocieran entre sí 
+      y que nuestros caminos terminaran uniéndose en el tiempo exacto.  
+
+      Lo nuestro es más grande porque es el plan perfecto del destino: llegar hasta aquí, 
+      hasta que eternamente este cronómetro siga contando segundos, minutos, horas, días, meses, años… 
+      y espero que también vidas.  
+
+      Te amo y te amaré por toda la eternidad, hasta que tú me lo permitas. 💖
+    `;
+  }
 
   // Cambiar color del título según el mes
   const titulo = document.getElementById("titulo");
@@ -77,3 +94,4 @@ window.addEventListener("load", () => {
     }
   }
 });
+
