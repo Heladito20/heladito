@@ -24,17 +24,16 @@ h1 {
   color: #eaeaea;
 }
 
+/* Álbum en 6 columnas */
 .album {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
   padding: 40px;
 }
 
 .album figure {
   margin: 0;
-  flex: 1 1 280px;
 }
 
 .album img {
@@ -46,11 +45,12 @@ h1 {
 
 .album figcaption {
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Architects Daughter', cursive;
   color: #f1f1f1;
 }
 
+/* Contador */
 #contador {
   margin-top: 25px;
   font-size: 22px;
@@ -58,6 +58,7 @@ h1 {
   font-weight: 600;
 }
 
+/* Spotify arriba */
 .spotify-section h2 {
   font-size: 28px;
   font-family: 'Architects Daughter', cursive;
@@ -74,6 +75,7 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
+/* Modal */
 .modal {
   display: none; 
   position: fixed; 
@@ -103,5 +105,3 @@ h1 {
   font-weight: bold;
   cursor: pointer;
 }
-
-
